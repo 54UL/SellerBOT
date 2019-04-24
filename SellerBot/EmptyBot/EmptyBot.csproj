@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <UserSecretsId>31a2237c-fb7e-4a3f-bea9-dbd390f6446d</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="EmptyBot.bot">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" />
+    <PackageReference Include="Microsoft.Bot.Builder" Version="4.3.2" />
+    <PackageReference Include="Microsoft.Bot.Builder.AI.Luis" Version="4.3.2" />
+    <PackageReference Include="Microsoft.Bot.Builder.AI.QnA" Version="4.3.2" />
+    <PackageReference Include="Microsoft.Bot.Builder.Integration.AspNet.Core" Version="4.3.2" />
+    <PackageReference Include="Microsoft.Bot.Configuration" Version="4.3.2" />
+    <PackageReference Include="Microsoft.Bot.Connector" Version="4.3.2" />
+    <PackageReference Include="Microsoft.Bot.Schema" Version="4.3.2" />
+  </ItemGroup>
+</Project>

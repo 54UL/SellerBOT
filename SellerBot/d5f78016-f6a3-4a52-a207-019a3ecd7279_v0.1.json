@@ -1,0 +1,63 @@
+{
+  "luis_schema_version": "3.2.0",
+  "versionId": "0.1",
+  "name": "SellerBot",
+  "desc": "",
+  "culture": "en-us",
+  "tokenizerVersion": "1.0.0",
+  "intents": [
+    {
+      "name": "Help"
+    },
+    {
+      "name": "None"
+    }
+  ],
+  "entities": [],
+  "composites": [],
+  "closedLists": [],
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "prebuiltEntities": [],
+  "model_features": [],
+  "regex_features": [],
+  "patterns": [],
+  "utterances": [
+    {
+      "text": "can you help me?",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "can you show me part",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "display help",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "help",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "look for part",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "search for part",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "search part 1easewf",
+      "intent": "None",
+      "entities": []
+    }
+  ],
+  "settings": []
+}

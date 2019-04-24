@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.489
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmptyBot", "SellerBot\EmptyBot\EmptyBot.csproj", "{73397B01-EA80-4166-8F20-A758450BFAEB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73397B01-EA80-4166-8F20-A758450BFAEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73397B01-EA80-4166-8F20-A758450BFAEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73397B01-EA80-4166-8F20-A758450BFAEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73397B01-EA80-4166-8F20-A758450BFAEB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {392D1FF9-A842-4CF8-8A0A-094C0C0A5A3E}
+	EndGlobalSection
+EndGlobal
