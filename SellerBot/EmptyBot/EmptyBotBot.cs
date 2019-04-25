@@ -332,10 +332,6 @@ namespace EmptyBot
                 await Accesor.ConversationState.SaveChangesAsync(
                 turnContext, false, cancellationToken);
             }
-            else if (turnContext.Activity.Type == ActivityTypes.ConversationUpdate)
-            {
-                await turnContext.SendActivityAsync("😃 Welcome!");
-            }
         }
     }
 }
