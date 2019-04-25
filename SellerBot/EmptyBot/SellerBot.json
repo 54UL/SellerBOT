@@ -104,8 +104,8 @@
       "entities": []
     },
     {
-      "text": "can you find a p",
-      "intent": "None",
+      "text": "can you give me a price estimation?",
+      "intent": "RequestQuote",
       "entities": []
     },
     {
@@ -151,11 +151,6 @@
     {
       "text": "give me bcnk-cu653",
       "intent": "Search",
-      "entities": []
-    },
-    {
-      "text": "give me information about a piece",
-      "intent": "None",
       "entities": []
     },
     {
@@ -225,6 +220,11 @@
       "entities": []
     },
     {
+      "text": "hi!",
+      "intent": "Greetings",
+      "entities": []
+    },
+    {
       "text": "how can i contact the store?",
       "intent": "Shop",
       "entities": []
@@ -260,11 +260,6 @@
       "entities": []
     },
     {
-      "text": "i need a p",
-      "intent": "None",
-      "entities": []
-    },
-    {
       "text": "i need help",
       "intent": "Help",
       "entities": []
@@ -280,23 +275,8 @@
       "entities": []
     },
     {
-      "text": "i want to search a piece",
-      "intent": "None",
-      "entities": []
-    },
-    {
       "text": "i want to search for a bbsc-18042",
       "intent": "Search",
-      "entities": []
-    },
-    {
-      "text": "im looking for a p",
-      "intent": "None",
-      "entities": []
-    },
-    {
-      "text": "info about a piece",
-      "intent": "None",
       "entities": []
     },
     {
@@ -305,46 +285,9 @@
       "entities": []
     },
     {
-      "text": "information about piece",
-      "intent": "None",
-      "entities": []
-    },
-    {
-      "text": "is available partid",
-      "intent": "None",
-      "entities": []
-    },
-    {
-      "text": "let me see a p",
-      "intent": "None",
-      "entities": []
-    },
-    {
       "text": "login",
       "intent": "Login",
       "entities": []
-    },
-    {
-      "text": "look for 1edvre for 1fmzu74e2yza89633",
-      "intent": "None",
-      "entities": [
-        {
-          "entity": "VID",
-          "startPos": 20,
-          "endPos": 36
-        }
-      ]
-    },
-    {
-      "text": "look for 23eweft for vehicle 1fmzu74e2yza89633",
-      "intent": "None",
-      "entities": [
-        {
-          "entity": "VID",
-          "startPos": 29,
-          "endPos": 45
-        }
-      ]
     },
     {
       "text": "please give me the status of quote quoteid",
@@ -393,22 +336,6 @@
       "entities": []
     },
     {
-      "text": "search for p",
-      "intent": "None",
-      "entities": []
-    },
-    {
-      "text": "search part 45trg2gt for 1fmzu74e2yza89633",
-      "intent": "None",
-      "entities": [
-        {
-          "entity": "VID",
-          "startPos": 25,
-          "endPos": 41
-        }
-      ]
-    },
-    {
       "text": "sign",
       "intent": "Login",
       "entities": []
@@ -446,11 +373,6 @@
     {
       "text": "you have some bbsc-18042",
       "intent": "Search",
-      "entities": []
-    },
-    {
-      "text": "you know where could i find a p",
-      "intent": "None",
       "entities": []
     }
   ],

@@ -1,4 +1,4 @@
-
+﻿
 
 
 
@@ -23,7 +23,7 @@ namespace StaticAppStringDefines
             set{ Search_Message = value; }
         }
 
-        private static string Help_Message = "You typed help for some help but there is not help yet, see comands";
+        private static string Help_Message = "The bot has lexical analysis,you can ask for login ask for a part to get info about a part";
         public static string HelpMessage 
         {
             get{ return Help_Message; }
@@ -46,7 +46,7 @@ namespace StaticAppStringDefines
             set{ None_Message = value; }
         }
 
-        private static string Greetings_Message = "hi, I�m a sales assistant bot";
+        private static string Greetings_Message = "hi, I´m a sales assistant bot 😃";
         public static string GreetingsMessage
         {
             get{ return Greetings_Message; }

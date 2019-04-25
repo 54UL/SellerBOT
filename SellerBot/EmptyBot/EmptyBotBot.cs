@@ -87,7 +87,7 @@ namespace EmptyBot
                     dynamic results = await _API_parts.GetQuote((int)Accesor.Parameters["partNumber"]);
                     var name = results.parts[0]?.store?.name;
                     var price = results.parts[0]?.price.list;
-                    await stepContext.Context.SendActivityAsync($"we have this part in this store " +
+                    await stepContext.Context.SendActivityAsync($"We have this part in this store " +
                    $"{name} and costs ${price} ");
 
                     break;
@@ -331,6 +331,10 @@ namespace EmptyBot
                 }
                 await Accesor.ConversationState.SaveChangesAsync(
                 turnContext, false, cancellationToken);
+            }
+            else if (turnContext.Activity.Type == ActivityTypes.ConversationUpdate)
+            {
+                await turnContext.SendActivityAsync("😃 Welcome!");
             }
         }
     }
