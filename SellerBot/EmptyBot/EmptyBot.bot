@@ -1,23 +1,42 @@
-﻿{
-  "name": "EmptyBot",
-  "services": [
-    {
-      "type": "endpoint",
-      "name": "development",
-      "endpoint": "http://localhost:3978/api/messages",
-      "appId": "",
-      "appPassword": "",
-      "id": "1"
-    },
-    {
-      "type": "endpoint",
-      "name": "production",
-      "endpoint": "https://EmptyBot.azurewebsites.net/api/messages",
-      "appId": "<YOUR APP ID>",
-      "appPassword": "<YOUR APP PASSWORD>",
-      "id": "2"
-    }
-  ],
-  "padlock": "",
-  "version": "2.0"
+{
+    "name": "EmptyBot",
+    "description": "",
+    "services": [
+        {
+            "type": "endpoint",
+            "name": "development",
+            "endpoint": "http://localhost:3978/api/messages",
+            "appId": "",
+            "appPassword": "",
+            "id": "1"
+        },
+        {
+            "type": "endpoint",
+            "name": "production",
+            "endpoint": "https://emptybot20190424034341.azurewebsites.net/api/messages",
+            "appId": "89fba4c3-ebb0-4ea8-9b42-1666381790b9",
+            "appPassword": "rpgqDUK342^~kabCUOO66?-",
+            "id": "2"
+        },
+        {
+            "type": "luis",
+            "name": "SellerBot",
+            "appId": "d5f78016-f6a3-4a52-a207-019a3ecd7279",
+            "version": "0.1",
+            "authoringKey": "e78c2457c40c4c4e94be9e3f6985e821",
+            "subscriptionKey": "e78c2457c40c4c4e94be9e3f6985e821",
+            "region": "westus",
+            "id": "158"
+        },
+        {
+            "type": "endpoint",
+            "endpoint": "https://emptybot20190424034341.azurewebsites.net/api/messages",
+            "name": "D",
+            "id": "210"
+        }
+    ],
+    "padlock": "",
+    "version": "2.0",
+    "path": "C:\\Users\\alan5\\source\\repos\\SellerBot\\SellerBot\\EmptyBot\\EmptyBot.bot",
+    "overrides": null
 }

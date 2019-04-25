@@ -1,0 +1,458 @@
+{
+  "luis_schema_version": "3.2.0",
+  "versionId": "0.1",
+  "name": "SellerBot",
+  "desc": "",
+  "culture": "en-us",
+  "tokenizerVersion": "1.0.0",
+  "intents": [
+    {
+      "name": "AddCart"
+    },
+    {
+      "name": "GetQuote"
+    },
+    {
+      "name": "Greetings"
+    },
+    {
+      "name": "Help"
+    },
+    {
+      "name": "Login"
+    },
+    {
+      "name": "None"
+    },
+    {
+      "name": "RemoveCart"
+    },
+    {
+      "name": "RequestQuote"
+    },
+    {
+      "name": "Search"
+    },
+    {
+      "name": "Shop"
+    },
+    {
+      "name": "StartSearch"
+    }
+  ],
+  "entities": [
+    {
+      "name": "Password",
+      "roles": []
+    },
+    {
+      "name": "QuoteId",
+      "roles": []
+    },
+    {
+      "name": "Username",
+      "roles": []
+    },
+    {
+      "name": "VID",
+      "roles": []
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "patternAnyEntities": [],
+  "regex_entities": [
+    {
+      "name": "PId",
+      "regexPattern": "\\w+-\\w+",
+      "roles": []
+    }
+  ],
+  "prebuiltEntities": [
+    {
+      "name": "number",
+      "roles": []
+    }
+  ],
+  "model_features": [],
+  "regex_features": [],
+  "patterns": [],
+  "utterances": [
+    {
+      "text": "add 5 of p",
+      "intent": "AddCart",
+      "entities": []
+    },
+    {
+      "text": "add p",
+      "intent": "AddCart",
+      "entities": []
+    },
+    {
+      "text": "add p to cart",
+      "intent": "AddCart",
+      "entities": []
+    },
+    {
+      "text": "can i have information about a bbsc-18042?",
+      "intent": "Search",
+      "entities": []
+    },
+    {
+      "text": "can i receive a quote?",
+      "intent": "RequestQuote",
+      "entities": []
+    },
+    {
+      "text": "can you find a p",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "can you help me?",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "can you quote my cart?",
+      "intent": "RequestQuote",
+      "entities": []
+    },
+    {
+      "text": "could you help me please",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "delete rfrgdw from cart",
+      "intent": "RemoveCart",
+      "entities": []
+    },
+    {
+      "text": "display help",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "do you have a cellphone number?",
+      "intent": "Shop",
+      "entities": []
+    },
+    {
+      "text": "find bcnk-cu653",
+      "intent": "Search",
+      "entities": []
+    },
+    {
+      "text": "give me a quote",
+      "intent": "RequestQuote",
+      "entities": []
+    },
+    {
+      "text": "give me bcnk-cu653",
+      "intent": "Search",
+      "entities": []
+    },
+    {
+      "text": "give me information about a piece",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "give me information about some piece",
+      "intent": "StartSearch",
+      "entities": []
+    },
+    {
+      "text": "give me quote with quoteid",
+      "intent": "GetQuote",
+      "entities": [
+        {
+          "entity": "QuoteId",
+          "startPos": 19,
+          "endPos": 25
+        }
+      ]
+    },
+    {
+      "text": "give me the shop info",
+      "intent": "Shop",
+      "entities": []
+    },
+    {
+      "text": "give me the store information",
+      "intent": "Shop",
+      "entities": []
+    },
+    {
+      "text": "give me your number",
+      "intent": "Shop",
+      "entities": []
+    },
+    {
+      "text": "heeeey",
+      "intent": "Greetings",
+      "entities": []
+    },
+    {
+      "text": "hello",
+      "intent": "Greetings",
+      "entities": []
+    },
+    {
+      "text": "hello there",
+      "intent": "Greetings",
+      "entities": []
+    },
+    {
+      "text": "help",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "help plz",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "hey",
+      "intent": "Greetings",
+      "entities": []
+    },
+    {
+      "text": "hi",
+      "intent": "Greetings",
+      "entities": []
+    },
+    {
+      "text": "how can i contact the store?",
+      "intent": "Shop",
+      "entities": []
+    },
+    {
+      "text": "how many bucks?",
+      "intent": "RequestQuote",
+      "entities": []
+    },
+    {
+      "text": "how much does it cost?",
+      "intent": "RequestQuote",
+      "entities": []
+    },
+    {
+      "text": "how much is it?",
+      "intent": "RequestQuote",
+      "entities": []
+    },
+    {
+      "text": "how much will it cost?",
+      "intent": "RequestQuote",
+      "entities": []
+    },
+    {
+      "text": "i need 1 piece of p",
+      "intent": "AddCart",
+      "entities": []
+    },
+    {
+      "text": "i need 5 pieces of p",
+      "intent": "AddCart",
+      "entities": []
+    },
+    {
+      "text": "i need a p",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i need help",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "i want information about a piece",
+      "intent": "StartSearch",
+      "entities": []
+    },
+    {
+      "text": "i want to login",
+      "intent": "Login",
+      "entities": []
+    },
+    {
+      "text": "i want to search a piece",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i want to search for a bbsc-18042",
+      "intent": "Search",
+      "entities": []
+    },
+    {
+      "text": "im looking for a p",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "info about a piece",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "information about a piece",
+      "intent": "StartSearch",
+      "entities": []
+    },
+    {
+      "text": "information about piece",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "is available partid",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "let me see a p",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "login",
+      "intent": "Login",
+      "entities": []
+    },
+    {
+      "text": "look for 1edvre for 1fmzu74e2yza89633",
+      "intent": "None",
+      "entities": [
+        {
+          "entity": "VID",
+          "startPos": 20,
+          "endPos": 36
+        }
+      ]
+    },
+    {
+      "text": "look for 23eweft for vehicle 1fmzu74e2yza89633",
+      "intent": "None",
+      "entities": [
+        {
+          "entity": "VID",
+          "startPos": 29,
+          "endPos": 45
+        }
+      ]
+    },
+    {
+      "text": "please give me the status of quote quoteid",
+      "intent": "GetQuote",
+      "entities": [
+        {
+          "entity": "QuoteId",
+          "startPos": 35,
+          "endPos": 41
+        }
+      ]
+    },
+    {
+      "text": "price",
+      "intent": "RequestQuote",
+      "entities": []
+    },
+    {
+      "text": "remove 1 piece of 3rrfe34r",
+      "intent": "RemoveCart",
+      "entities": []
+    },
+    {
+      "text": "remove 34rrefe",
+      "intent": "RemoveCart",
+      "entities": []
+    },
+    {
+      "text": "remove 34rrftg from cart",
+      "intent": "RemoveCart",
+      "entities": []
+    },
+    {
+      "text": "remove 5 pieces of 344f45ttg",
+      "intent": "RemoveCart",
+      "entities": []
+    },
+    {
+      "text": "search cfhh-597",
+      "intent": "Search",
+      "entities": []
+    },
+    {
+      "text": "search for a bbsc-18042",
+      "intent": "Search",
+      "entities": []
+    },
+    {
+      "text": "search for p",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "search part 45trg2gt for 1fmzu74e2yza89633",
+      "intent": "None",
+      "entities": [
+        {
+          "entity": "VID",
+          "startPos": 25,
+          "endPos": 41
+        }
+      ]
+    },
+    {
+      "text": "sign",
+      "intent": "Login",
+      "entities": []
+    },
+    {
+      "text": "sign in",
+      "intent": "Login",
+      "entities": []
+    },
+    {
+      "text": "start user",
+      "intent": "Login",
+      "entities": []
+    },
+    {
+      "text": "where can i buy this?",
+      "intent": "Shop",
+      "entities": []
+    },
+    {
+      "text": "where could i buy this?",
+      "intent": "Shop",
+      "entities": []
+    },
+    {
+      "text": "where's the store at?",
+      "intent": "Shop",
+      "entities": []
+    },
+    {
+      "text": "where's the store?",
+      "intent": "Shop",
+      "entities": []
+    },
+    {
+      "text": "you have some bbsc-18042",
+      "intent": "Search",
+      "entities": []
+    },
+    {
+      "text": "you know where could i find a p",
+      "intent": "None",
+      "entities": []
+    }
+  ],
+  "settings": []
+}
