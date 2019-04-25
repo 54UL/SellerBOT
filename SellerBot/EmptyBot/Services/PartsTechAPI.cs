@@ -33,19 +33,25 @@ namespace Services
         {
             var data = new
             {
-                accessType = "partner",
+                accessType = "user",
                 credentials = new
                 {
                     partner = new
                     {
                         id = "beta_bosch",
                         key = "4700fc1c26dd4e54ab26a0bc1c9dd40d"
+                    },
+                    user = new
+                    {
+                        id = "hackteam_18",
+                        key = "e73908b462d547a69525ef5291368068"
                     }
                 }
             };
             var contentString = JObject.FromObject(data).ToString();
             var dataString = new StringContent(contentString, Encoding.UTF8, "application/json");
             var url = "https://api.beta.partstech.com/oauth/access";
+            logTime = DateTime.Now;
             var response = await this._client.PostAsync(url, dataString);
             dynamic result = null;
             if (response.StatusCode == HttpStatusCode.OK)
@@ -61,8 +67,10 @@ namespace Services
                 {
                     System.Console.WriteLine(e.Message);
                 }
+
+                return result;
             }
-            return result;
+            return null;
         }
 
         private async Task<string> refreshAcces()
@@ -236,7 +244,7 @@ namespace Services
         }
 
 
-        public async Task<dynamic> GetQuote(int partId)
+        public async Task<dynamic> GetQuote(string partId)
         {
             _client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", _access_token);
 
@@ -251,7 +259,7 @@ namespace Services
             {
                 searchParams = new
                 {
-                    partNumber = new string[] { partId.ToString() }
+                    partNumber = new string[] { partId }
                 },
                 storeId = _storeId
             };

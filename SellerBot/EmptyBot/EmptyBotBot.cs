@@ -84,7 +84,7 @@ namespace EmptyBot
             {
                 case "Yes":
 
-                    dynamic results = await _API_parts.GetQuote((int)Accesor.Parameters["partNumber"]);
+                    dynamic results = await _API_parts.GetQuote((string)Accesor.Parameters["partNumber"]);
                     var name = results.parts[0]?.store?.name;
                     var price = results.parts[0]?.price.list;
                     await stepContext.Context.SendActivityAsync($"We have this part in this store " +
@@ -244,7 +244,7 @@ namespace EmptyBot
                         var tempResult = await _API_parts.GetItemByID(recognizerResult.Entities["PId"].First.Value<string>().ToUpper());
                         var result_pieces = tempResult?.partName;
                         var blabla = tempResult?.partNumber as JToken;
-                        Accesor.Parameters["partNumber"] = blabla.Value<int>();
+                        Accesor.Parameters["partNumber"] = blabla.Value<string>();
                         JArray image = tempResult?.images;
                         dynamic obj = image[image.Count > 2 ? 1 : image.Count - 1];
                         var attachment = new Attachment
